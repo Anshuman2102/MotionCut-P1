@@ -70,7 +70,7 @@ main {
     margin: 20px;
     padding: 20px;
     text-align: center;
-    width: 300px; /* Fixed width for all pricing cards */
+    width: 300px;
     max-width: 100%;
 }
 
@@ -120,6 +120,6 @@ footer {
     }
 
     .pricing-card {
-        margin: 20px 0; /* Adjust margin for spacing */
+        margin: 20px 0;
     }
 }
