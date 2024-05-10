@@ -70,10 +70,8 @@ main {
     margin: 20px;
     padding: 20px;
     text-align: center;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 300px; /* Fixed width for all pricing cards */
+    max-width: 100%;
 }
 
 .pricing-card h3 {
@@ -115,8 +113,13 @@ footer {
 }
 
 /* Responsive styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .pricing-card {
-        max-width: 100%;
+        margin: 20px 0; /* Adjust margin for spacing */
     }
 }
